@@ -1,0 +1,50 @@
+body{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.content{
+    position: absolute;
+    width: 35vw;
+    height: 40vh;
+    top:15vh;
+    bottom: 30vw;
+    left: 30vw;
+    right:30vw;
+    color:rgba(2, 0, 1, 0.747);
+
+}
+
+button{
+    border-radius: 10px;
+    border: 1px solid rgb(92, 148, 194);
+    width: auto;   
+    padding: 10px;
+    margin: 0 0 10px;
+    font-size: 16px ;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px;
+    
+
+}
+
+.app{
+    background: teal;
+    padding: 50px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+#displayContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+}
+.coord{
+    margin: 10px;
+    font-size: 20px;
+}

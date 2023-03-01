@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(255, 255, 255);
+    min-height: 100vh;
+    overflow: hidden; /* faire disparaître le scroll */
+      
+}
+.monSpan{
+    position:absolute; 
+    top: 100vh;
+    border-radius: 50px;
+    height:100px; 
+    width:100px; 
+    border-radius:50px;
+    transform: translate(5%, 5%);
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202) 0%, rgba(148,187,233) 100%);
+    opacity: 0.2;
+    animation: deplacer 8s infinite;
+    filter: hue-rotate(100deg);
+    cursor: crosshair; 
+}
+:root {
+    --my-start-left: 50vw;
+    --my-end-left: 50vw;
+}
+
+@keyframes deplacer {
+    /* ces paramètres top et bottom vont changer */
+    0% {bottom: 0px;left:var(--my-start-left);}
+    25% {opacity: 0.5;filter: hue-rotate(200deg);}
+    50% {opacity: 0.75;filter: hue-rotate(500deg);}
+    75% {opacity: 0.95;filter: hue-rotate(800deg);}
+    100% {top: -50vh;left:var(--my-end-left);}
+}
+
+p{
+    position:absolute;
+    top:10%;
+    left:10%;
+    font-size: 32px;
+}

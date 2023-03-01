@@ -1,0 +1,54 @@
+body{
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    min-height: 100vh; 
+}
+
+
+.rangeRow{
+    display: flex;
+    flex-direction: row;
+    
+}
+.photo{
+    width:180px;
+    height:180px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.gender{
+    position:relative;
+    width:40px;
+    height:auto;
+    left:-105px ;
+    margin-bottom: -15px;
+}
+.countryBloc{
+    display: flex;
+    flex-wrap: wrap; /*Les blocs les uns à côté des autres*/
+    flex-direction: row;
+    justify-content: start;
+}
+.countryDetail{
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 3px;
+    border: 1px solid rgba(128, 97, 168, 0.288);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    margin: 10px;
+
+    background: rgb(94,194,92);
+    background: linear-gradient(45deg, rgba(94,194,92,1) 0%, rgba(154,210,100,1) 51%, rgba(238,217,18,0.7819502801120448) 88%);
+}
+

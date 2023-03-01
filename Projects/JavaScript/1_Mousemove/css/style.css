@@ -1,0 +1,30 @@
+
+.mousemove1{
+    height:50px; 
+    width:50px; 
+    border:2px solid rgb(192, 16, 45); 
+    position:absolute; 
+    border-radius:50px;
+    transform: translate(5%, 5%);
+    background-color: rgb(192, 16, 45);
+    
+}
+.mousemove2{
+    height:60px; 
+    width:60px; 
+    border:2px solid rgb(54, 16, 192); 
+    position:absolute; 
+    border-radius:50px;
+    transform: translate(5%,5%);
+    background-color: rgb(54, 16, 192);
+}
+.mousemove3{
+    height:70px; 
+    width:70px; 
+    border:2px solid rgb(16, 192, 104); 
+    position:absolute; 
+    border-radius:50px;
+    transform: translate(-50%, -50%);
+    background-color: rgb(16, 192, 104);
+}
+

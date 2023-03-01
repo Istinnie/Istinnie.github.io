@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pwd Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <div class="app">
+      <!-- <h2>Mot de passe</h2> -->
+      <input type="text" name="pwdgenerated" id="pwdgenerated" readonly />
+      <div class="range-container">
+        <input
+          type="range"
+          name="pwdrange"
+          id="pwdrange"
+          min="4"
+          max="24"
+          oninput="pwdrangevalue.value = this.value"
+        />
+        <input
+          type="text"
+          name="pwdrangevalue"
+          id="pwdrangevalue"
+          value="4"
+          readonly
+        />
+      </div>
+      <div class="checkbox-container">
+        <input type="checkbox" name="lowercase" id="lowercase" />
+        <label for="lowercase">a-z</label>
+        <input type="checkbox" name="uppercase" id="uppercase" />
+        <label for="uppercase">A-Z</label>
+        <input type="checkbox" name="number" id="number" />
+        <label for="number">0-9</label>
+        <input type="checkbox" name="special" id="special" />
+        <label for="special">!@*</label>
+      </div>
+      <button>Generate Password</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

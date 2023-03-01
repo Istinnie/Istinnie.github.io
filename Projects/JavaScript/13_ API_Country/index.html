@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country API</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="app">
+        <div> 
+            <h2>Les pays du monde</h2>
+        </div>
+        <div class="rangeRow">
+            <input id="inputSearch" type="text" placeholder="Rechercher"><!-- un input text qui permettra de rechercher (filtrer) -->
+         
+        </div>
+        <div class="coord">
+            <div class="rangeRow">
+                <input id="inputRange" type="range" min="1" max="250"  step="1" value="250"><!-- un input range qui servira à déterminer le nombre de résultat que l'on veut afficher -->
+                <span id="rangeSpan" class="coord">10</span><!-- un span qui va afficher la valeur contenu dans le input range précédant. -->
+         
+            </div>
+            
+        </div>
+        <div class="rangeRow"><!-- trois boutons pour trier les données (croissant, décroissant, alphabétique) -->
+           <button id="croissantTri" title="Tri de population par ordre croissant ">Tri croissant</button>
+            <button id="decroissantTri" title="Tri de population par ordre décroissant ">Tri décroissant</button>
+            <button id="alphaTri" title="Tri de pays par ordre alphabétique ">Tri alphabétique</button> 
+        </div>
+        
+        <div class="rangeRow">
+            <div id="countries" class="countryBloc">
+
+            </div>
+        </div>
+
+        
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

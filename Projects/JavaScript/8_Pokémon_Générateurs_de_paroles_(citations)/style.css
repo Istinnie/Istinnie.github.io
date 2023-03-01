@@ -1,0 +1,27 @@
+.content{
+    display: block;
+    margin: auto;
+    padding: auto;
+    width: 40vw;
+    height: 50vh;
+
+}
+.imagePokemon{
+    width: 20vw;
+}
+
+#generateCitation {
+    background-color: #d3d1d1;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#generateCitation:hover {
+    background-color: black;
+    color: white;
+}

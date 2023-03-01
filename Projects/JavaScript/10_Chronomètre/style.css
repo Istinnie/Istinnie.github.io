@@ -1,0 +1,41 @@
+.content{
+    position: absolute;
+    width: 35vw;
+    height: 40vh;
+    top:15vh;
+    bottom: 30vw;
+    left: 30vw;
+    right:30vw;
+    color:rgba(2, 0, 1, 0.747);
+
+}
+
+form{
+    background: rgb(194,92,137);
+    background: linear-gradient(90deg, rgba(194,92,137,1) 0%, rgba(148,187,233,1) 100%);
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+input, button{
+    border-radius: 10px;
+    border: 1px solid rgb(107, 92, 194);
+    width: 100px;   
+    padding: 10px;
+    margin: 0 0 10px;
+    font-size: 16px ;
+}
+label{
+    margin-bottom: 15x;
+    margin: 0 0 10px;
+    text-align: left;
+    font-weight: bold;
+}
+h2{
+    margin-bottom: 30px;
+}
+#priceU, #priceT{
+    color: rgb(80, 4, 57);
+}
