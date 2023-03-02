@@ -162,7 +162,7 @@ li:hover {
     width: 340px;
     height: 300px;
     margin-bottom: 10px;
-    border: 1px solid #aaaaaa34 ;
+    /* border: 1px solid #aaaaaa34 ; */
     /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
   -webkit-transition: all 1s ease; /* Safari et Chrome */
   -moz-transition: all 1s ease; /* Firefox */
