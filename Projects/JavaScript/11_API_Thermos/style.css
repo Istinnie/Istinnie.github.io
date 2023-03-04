@@ -32,11 +32,14 @@ button{
 }
 
 .app{
-    background: teal;
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202) 0%, rgba(148,187,233) 100%);
+    filter: hue-rotate(10deg);
     padding: 50px;
     text-align: center;
-    color: white;
+    color: rgb(50, 0, 63);
     border-radius: 10px;
+    font-weight: bold;
 }
 #displayContainer{
     display: flex;

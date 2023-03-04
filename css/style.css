@@ -32,14 +32,14 @@ h1 {
   margin-bottom: 50px;
 }
 p {
-  padding: 30px 50px;
+  padding: 0px 45px 20px ;
 }
 #side-bar {
   position: absolute;
   width: 230px;
   height: 100%;
   background: #690283;
-  top: 0;
+  top: -20px;
   left: -230px;
   transition: 0.5s ease-out;
   z-index: 4;
@@ -87,14 +87,14 @@ h2 {
 a{
   text-decoration: none;
   font-weight: bold;
-  color: #969096;
+  color: #ffffff;
   margin: 0px;
 }
 span{
   color: #690283;
 }
 
-/* -------------------PHOTO -------------------*/
+/* -------------------PHOTO NAV BAR-------------------*/
 
 .photo{
     width:180px;
@@ -109,6 +109,7 @@ span{
   .photoId {
     position: relative;
     width: auto;
+    margin-top: 20px;
     
   }
 .overlay {
@@ -142,7 +143,7 @@ span{
     text-align: center;
   }
 
-  /* -------------------------------------- */
+  /* ------------------ PROJET PAGE -------------------- */
 
   /* BLOC DE PROJECT JAVSCRIPT */
   .projectRow{
@@ -150,6 +151,7 @@ span{
     flex-direction: row;
     flex-wrap: wrap; 
     margin: 30px;
+    
     
 }
   .projectJS{
@@ -212,6 +214,7 @@ span{
   width: 400px;
   height: 250px;
   margin-bottom: 10px;
+  margin-left: -20px;
   /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
 -webkit-transition: all 1s ease; /* Safari et Chrome */
 -moz-transition: all 1s ease; /* Firefox */
@@ -246,7 +249,7 @@ transition: all 1s ease;
 
 
 
-/* // ------- PROJET */
+/* // ------- PROJET DISPLAY ----------------------- */
 
 .folder {
   display: flex;
@@ -305,10 +308,153 @@ transition: all 1s ease;
   margin-top: -5px;
   fill: #530053;
 }
-.projectsList{
+
+
+
+
+/* // ------------ CV PAGE-------------------------- */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  margin: -10px auto;
+}
+.timeline__event {
+    background: #fff;
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+      0 18px 36px -18px rgba(0, 0, 0, 0.3),
+      0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+}
+.timeline__event__title {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    text-transform: uppercase;
+
+    font-weight: 600;
+    color: #2f143a;
+    letter-spacing: 1.1px;
+}
+.timeline__event__content {
+padding: 10px;
+}
+.timeline__event__date {
+color: #f6a4ec;
+font-size: 1.1rem;
+font-weight: 600;
+white-space: nowrap;
+}
+.timeline__event__icon {
+border-radius: 8px 0 0 8px;
+background: #9251ac;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-basis: 20%;
+font-size: 2rem;
+color: #9251ac;
+padding: 20px;
+}
+.timeline__event__icon i {
+  position: absolute;
+  top: 50%;
+  left:-65px;
+  font-size: 2.5rem;
+transform: translateY(-50%);
+  
+}
+
+.timeline__event__description {
+flex-basis: 80%;
+}
+
+.timeline__event:after {
+content: "";
+width: 2px;
+height: 100%;
+background: #9251ac;
+position: absolute;
+top: 52%;
+/* // transform: translateY(-50%); */
+left: -3.5rem;
+z-index: -1;
+
 
 }
 
+.timeline__event:before {
+content: "";
+width: 5rem;
+height: 5rem;
+position: absolute;
+background: #f6a4ec;
+border-radius: 100%;
+left: -6rem;
+/* // right: 90%; */
+top: 50%;
+transform: translateY(-50%);
+border: 2px solid #9251ac;
+}
+
+.timeline__event--type2:before {
+  background: #87bbfe;
+  border-color: #555ac0;
+}
+.timeline__event--type2:after{
+  background: #555ac0;
+
+}
+.timeline__event__date {
+  color: #87bbfe;
+}
+
+.timeline__event__icon {
+  background: #555ac0;
+  color: #555ac0;
+}
+.timeline__event__title {
+  color: #555ac0;
+}
 
 
-/* // ------------ FOLDER ITEM */
+.timeline__event--type3:before {
+  background: #aff1b6;
+  border-color: #24b47e;
+}
+.timeline__event--type3:after{
+  background: #24b47e;
+
+}
+.timeline__event__date {
+  color: #000000;
+}
+
+.timeline__event__icon {
+  background: #ad53c49a;
+  color: #5f1c74;
+}
+.timeline__event__title {
+  color: #6902839a;
+}
+
+.timeline__event--type2:last-child:after{
+    content: none;
+  }
+
+
+@media (max-width: 786px) {
+  .timeline__event {
+    flex-direction: column;
+  }
+  .timeline__event__icon {
+    border-radius: 4px 4px 0 0;
+  }
+}
+
+h4,h5{
+  margin: 20px;
+}

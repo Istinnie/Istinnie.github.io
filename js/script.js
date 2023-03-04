@@ -58,9 +58,12 @@ function displayProjects(n) {
         projectsList.style.display = "block";
         document.querySelector(".svpPlus_show_"+n).style.display = "none";
         document.querySelector(".svpPlus_hide_"+n).style.display = "block";
+        
     } else {
+        
         projectsList.style.display = "none";
         document.querySelector(".svpPlus_show_"+n).style.display = "block";
         document.querySelector(".svpPlus_hide_"+n).style.display = "none";
+        
     }
   }

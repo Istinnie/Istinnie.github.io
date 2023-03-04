@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mes projets</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script><!--Navigation bar link jquery-->
+</head>
+
+<body>
+  <!-- NavBar-->
+  <div id="nav-placeholder">
+  </div>
+  <script>
+      $(function(){
+        $("#nav-placeholder").load("navBar.html");
+      });
+  </script>
+  <!--  -->
+
+  <section class="content">
+    <div>
+      <h1>Mes projets</h1>
+    </div>
+    
+    
+    
+
+    <div>
+      <div class="folder">
+        <div >
+            <div class="titleProject" onclick="displayProjects(1)">
+              
+                <span class="folder-summary" >
+                  <svg xmlns="http://www.w3.org/2000/svg" class="svpPlus_show_1" width="30" height="30" fill="currentColor" class="bi bi-folder-fill" viewBox="0 0 16 16">
+                    <path d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3zm-8.322.12C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="svpPlus_hide_1" style="display: none;" width="30" height="30" class="bi bi-folder-minus" viewBox="0 0 16 16">
+                    <path d="m.5 3 .04.87a1.99 1.99 0 0 0-.342 1.311l.637 7A2 2 0 0 0 2.826 14H9v-1H2.826a1 1 0 0 1-.995-.91l-.637-7A1 1 0 0 1 2.19 4h11.62a1 1 0 0 1 .996 1.09L14.54 8h1.005l.256-2.819A2 2 0 0 0 13.81 3H9.828a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 6.172 1H2.5a2 2 0 0 0-2 2zm5.672-1a1 1 0 0 1 .707.293L7.586 3H2.19c-.24 0-.47.042-.683.12L1.5 2.98a1 1 0 0 1 1-.98h3.672z"/>
+                    <path d="M11 11.5a.5.5 0 0 1 .5-.5h4a.5.5 0 1 1 0 1h-4a.5.5 0 0 1-.5-.5z"/>
+                  </svg>  
+                  
+                  Conception électronique</button>
+              </span>
+              
+              
+
+            </div>
+        </div>
+        
+        <div id ="projet1" class="projectsList" style="display: none;">
+          <div class="projectRow">
+
+      
+            <!-- <h3>Mes projets Javascript</h3> -->
+            <!-- <li><a href="Projects/JavaScript/1_Mousemove/index.html">Manipliation de la souris</a></li>
+            <li><a href="Projects/JavaScript/2_SCROLL_NAVBAR/index.html">La barre de navigation cachée</a></li> -->
+            <!-- <li><a href="Projects/JavaScript/3_SCROLL_POPUP/index.html">La notification avec Popup</a></li> -->
+            <!-- <li><a href="Projects/JavaScript/9_Booking_Gestion_de_dates/index.html">Contraintes de dates</a></li> -->
+            <!-- <li><a href="Projects/JavaScript/5_BODY_CHANGE_COLOR(RGB)/index.html">Générateur de colieur</a></li> -->
+            <!-- <li><a href="Projects/JavaScript/12_ API_Kanalablag/index.html">Générateur de blagues &#x1F60A;</a></li> -->
+            <!-- <li><a href="Projects/JavaScript/14_Les_dalons/index.html">Un portfolio aléatoire des utilisateurs</a></li> -->
+            <!-- <li><a href="Projects/JavaScript/8_Pokémon_Générateurs_de_paroles_(citations)/index.html">Générateur de citations de Pokémon</a></li> -->
+            <!-- <li><a href="Projects/JavaScript/10_Chronomètre/index.html">Mon Chronomètre</a></li> -->
+            <!-- <li><a href="Projects/JavaScript/4_SIDEBAR/index.html">La barre de navigation Hamburger</a></li> -->
+            
+            <div class="projectJS" >
+                <div class="projectJSDetail">
+                    
+                      <h2>Allons éclater les bulles 
+                        <!-- <img  "src="https://img.icons8.com/ios-glyphs/30/000000/foam-bubbles.png"/>-->
+                        <img style="margin-bottom: -5px;" src="img/icons8-foam-bubbles-30.png"> 
+                        <!-- data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABfElEQVR4nO2WO0vDYBSGnw62gxcEN2Pngq24i/4ct/oDrLOjUrHob6gUOjgI3jatunSo/guVNnVsqRw4QvxIc2m+ZBBfeCGkX85Dzi2Ff/3WBnACvAJfarmuAxVSUAE4A8bAZIpHQAPI24TeBwBN39mCn3uC7gPzQC0EfmqjpmNPwAW9vxgClrSXk4DrRsCawg8ipPw4CfgtRm1N95KAhwnAbhKwawG8rPP+BOzplGSS6k3jfhdw4jZXHP801xJw6QMvBIErOhpxofLMuieO43OmGvbWjRnAss+9Kvqc6YSBZf3dxoDeAHNAToHiq1m7Pq9rMCjtI31TgYoObY5bWZumpzM+1OsjT01zutPDMtPBolaA64glqdoES5pfIkC7UT+d0iAtrYu4DZSmnF0FnkOgTlToh0+AT/3NT7IcdoEHfVZ64VHTG/lPQktBW8C2Ab8gRbkKEeiOAR5kAZ74uJ8muB0AbqYJLmkjmdB3YI2UVdRGGqibWUD50/oGtT06UvdpsLIAAAAASUVORK5CYII= -->
+                      </h2>
+                      <div>
+                          <a href="Projects/JavaScript/6_Bubble/index.html">
+                            <img src="img/bulleGame.PNG" alt="" class="imgBulle" >
+                          </a>
+                      </div>
+                      
+                      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </span>
+                    
+                </div>
+                
+                   
+              </div>
+              <div class="projectJS" >
+                <div class="projectJSDetail">
+                    <h2>Température actuelle
+                      <svg xmlns="http://www.w3.org/2000/svg" style="margin-bottom: -5px; margin-left:5px;" width="30" height="30" fill="currentColor" class="bi bi-thermometer-sun" viewBox="0 0 16 16">
+                        <path d="M5 12.5a1.5 1.5 0 1 1-2-1.415V2.5a.5.5 0 0 1 1 0v8.585A1.5 1.5 0 0 1 5 12.5z"/>
+                        <path d="M1 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0V2.5zM3.5 1A1.5 1.5 0 0 0 2 2.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0L5 10.486V2.5A1.5 1.5 0 0 0 3.5 1zm5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0v-1a.5.5 0 0 1 .5-.5zm4.243 1.757a.5.5 0 0 1 0 .707l-.707.708a.5.5 0 1 1-.708-.708l.708-.707a.5.5 0 0 1 .707 0zM8 5.5a.5.5 0 0 1 .5-.5 3 3 0 1 1 0 6 .5.5 0 0 1 0-1 2 2 0 0 0 0-4 .5.5 0 0 1-.5-.5zM12.5 8a.5.5 0 0 1 .5-.5h1a.5.5 0 1 1 0 1h-1a.5.5 0 0 1-.5-.5zm-1.172 2.828a.5.5 0 0 1 .708 0l.707.708a.5.5 0 0 1-.707.707l-.708-.707a.5.5 0 0 1 0-.708zM8.5 12a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0v-1a.5.5 0 0 1 .5-.5z"/>
+                      </svg>
+                    </h2>
+                    <div>
+                      <a href="Projects/JavaScript/11_API_Thermos/index.html">
+                        <img src="img/tempActuelle.PNG" alt="" class="imgTemp">
+                      </a>
+                    </div>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </span>
+                    
+                    
+                </div>
+                
+                   
+              </div>
+              <div class="projectJS" >
+                
+                <div class="projectJSDetail">
+                        <h2>Les pays du mondes <svg xmlns="http://www.w3.org/2000/svg" style="margin-bottom: -5px;margin-left:5px;" width="30" height="30" fill="currentColor" class="bi bi-globe-europe-africa" viewBox="0 0 16 16">
+                          <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM3.668 2.501l-.288.646a.847.847 0 0 0 1.479.815l.245-.368a.809.809 0 0 1 1.034-.275.809.809 0 0 0 .724 0l.261-.13a1 1 0 0 1 .775-.05l.984.34c.078.028.16.044.243.054.784.093.855.377.694.801-.155.41-.616.617-1.035.487l-.01-.003C8.274 4.663 7.748 4.5 6 4.5 4.8 4.5 3.5 5.62 3.5 7c0 1.96.826 2.166 1.696 2.382.46.115.935.233 1.304.618.449.467.393 1.181.339 1.877C6.755 12.96 6.674 14 8.5 14c1.75 0 3-3.5 3-4.5 0-.262.208-.468.444-.7.396-.392.87-.86.556-1.8-.097-.291-.396-.568-.641-.756-.174-.133-.207-.396-.052-.551a.333.333 0 0 1 .42-.042l1.085.724c.11.072.255.058.348-.035.15-.15.415-.083.489.117.16.43.445 1.05.849 1.357L15 8A7 7 0 1 1 3.668 2.501Z"/>
+                        </svg></h2>
+                        <div>
+                          <a href="Projects/JavaScript/13_ API_Country/index.html">
+                            <img src="img/paysDuMonde.PNG" alt=""class="imgPays" >
+                          </a>
+                        </div>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </span>
+                </div>
+              </div>
+              
+          
+              <div class="projectJS" >
+                
+                <div class="projectJSDetail">
+                  <h2>Générateur de mot de passe
+                    <svg xmlns="http://www.w3.org/2000/svg" style="margin-bottom: -8px;margin-left:5px;"width="30" height="30" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                      <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z"/>
+                      <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                    </svg>
+                  </h2>
+                  
+                  <div>
+                    <a href="Projects/JavaScript/7_GenerateurDePasse/Projet - PasswordGenerator/index.html">
+                      <img src="img/mdpGenerator.PNG" alt=""class="imgGMDP" >
+                    </a>
+                  </div>
+                  <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </span>
+                </div>
+              </div>
+            
+    
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div>
+      <div class="folder">
+        <div >
+            <div class="titleProject" onclick="displayProjects(2)">
+                <span class="folder-summary" >
+                  <svg xmlns="http://www.w3.org/2000/svg" class="svpPlus_show_2" width="30" height="30" fill="currentColor" class="bi bi-folder-fill" viewBox="0 0 16 16">
+                    <path d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3zm-8.322.12C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="svpPlus_hide_2" style="display: none;" width="30" height="30" class="bi bi-folder-minus" viewBox="0 0 16 16">
+                    <path d="m.5 3 .04.87a1.99 1.99 0 0 0-.342 1.311l.637 7A2 2 0 0 0 2.826 14H9v-1H2.826a1 1 0 0 1-.995-.91l-.637-7A1 1 0 0 1 2.19 4h11.62a1 1 0 0 1 .996 1.09L14.54 8h1.005l.256-2.819A2 2 0 0 0 13.81 3H9.828a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 6.172 1H2.5a2 2 0 0 0-2 2zm5.672-1a1 1 0 0 1 .707.293L7.586 3H2.19c-.24 0-.47.042-.683.12L1.5 2.98a1 1 0 0 1 1-.98h3.672z"/>
+                    <path d="M11 11.5a.5.5 0 0 1 .5-.5h4a.5.5 0 1 1 0 1h-4a.5.5 0 0 1-.5-.5z"/>
+                  </svg>  
+                  
+                  Exemples d'applications Javascript</button>
+              </span>
+            </div>
+        </div>
+        
+        <div id ="projet2" class="projectsList" style="display: none; ">
+          <div class="projectRow">
+            <div class="projectJS" >
+                <div class="projectJSDetail">
+                    
+                      <h2>Allons éclater les bulles 
+                        <!-- <img  "src="https://img.icons8.com/ios-glyphs/30/000000/foam-bubbles.png"/>-->
+                        <img style="margin-bottom: -5px;" src="img/icons8-foam-bubbles-30.png"> 
+                        <!-- data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABfElEQVR4nO2WO0vDYBSGnw62gxcEN2Pngq24i/4ct/oDrLOjUrHob6gUOjgI3jatunSo/guVNnVsqRw4QvxIc2m+ZBBfeCGkX85Dzi2Ff/3WBnACvAJfarmuAxVSUAE4A8bAZIpHQAPI24TeBwBN39mCn3uC7gPzQC0EfmqjpmNPwAW9vxgClrSXk4DrRsCawg8ipPw4CfgtRm1N95KAhwnAbhKwawG8rPP+BOzplGSS6k3jfhdw4jZXHP801xJw6QMvBIErOhpxofLMuieO43OmGvbWjRnAss+9Kvqc6YSBZf3dxoDeAHNAToHiq1m7Pq9rMCjtI31TgYoObY5bWZumpzM+1OsjT01zutPDMtPBolaA64glqdoES5pfIkC7UT+d0iAtrYu4DZSmnF0FnkOgTlToh0+AT/3NT7IcdoEHfVZ64VHTG/lPQktBW8C2Ab8gRbkKEeiOAR5kAZ74uJ8muB0AbqYJLmkjmdB3YI2UVdRGGqibWUD50/oGtT06UvdpsLIAAAAASUVORK5CYII= -->
+                      </h2>
+                      <div>
+                          <a href="Projects/JavaScript/6_Bubble/index.html">
+                            <img src="img/bulleGame.PNG" alt="" class="imgBulle" >
+                          </a>
+                      </div>
+                      
+                      <span>
+                        Le joueur doit éclater les bulles pour gagner des points. Combien de bulles pouvez-vous exploser &#128526; ?</span>
+                    
+                </div>
+                
+                   
+            </div>
+            <div class="projectJS" >
+                <div class="projectJSDetail">
+                    <h2>Température actuelle
+                      <svg xmlns="http://www.w3.org/2000/svg" style="margin-bottom: -5px; margin-left:5px;" width="30" height="30" fill="currentColor" class="bi bi-thermometer-sun" viewBox="0 0 16 16">
+                        <path d="M5 12.5a1.5 1.5 0 1 1-2-1.415V2.5a.5.5 0 0 1 1 0v8.585A1.5 1.5 0 0 1 5 12.5z"/>
+                        <path d="M1 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0V2.5zM3.5 1A1.5 1.5 0 0 0 2 2.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0L5 10.486V2.5A1.5 1.5 0 0 0 3.5 1zm5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0v-1a.5.5 0 0 1 .5-.5zm4.243 1.757a.5.5 0 0 1 0 .707l-.707.708a.5.5 0 1 1-.708-.708l.708-.707a.5.5 0 0 1 .707 0zM8 5.5a.5.5 0 0 1 .5-.5 3 3 0 1 1 0 6 .5.5 0 0 1 0-1 2 2 0 0 0 0-4 .5.5 0 0 1-.5-.5zM12.5 8a.5.5 0 0 1 .5-.5h1a.5.5 0 1 1 0 1h-1a.5.5 0 0 1-.5-.5zm-1.172 2.828a.5.5 0 0 1 .708 0l.707.708a.5.5 0 0 1-.707.707l-.708-.707a.5.5 0 0 1 0-.708zM8.5 12a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0v-1a.5.5 0 0 1 .5-.5z"/>
+                      </svg>
+                    </h2>
+                    <div>
+                      <a href="Projects/JavaScript/11_API_Thermos/index.html">
+                        <img src="img/tempActuelle.PNG" alt="" class="imgTemp">
+                      </a>
+                    </div>
+                    <span>Où habitez-vous ? Quel temps fait-il là bas actuellement ? ... Pas d'inquiétude, j'ai ce qu'il vous faut &#128529; </span>
+                    
+                    
+                </div>
+                
+                   
+            </div>
+            <div class="projectJS" >
+                
+                <div class="projectJSDetail">
+                        <h2>Les pays du mondes <svg xmlns="http://www.w3.org/2000/svg" style="margin-bottom: -5px;margin-left:5px;" width="30" height="30" fill="currentColor" class="bi bi-globe-europe-africa" viewBox="0 0 16 16">
+                          <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM3.668 2.501l-.288.646a.847.847 0 0 0 1.479.815l.245-.368a.809.809 0 0 1 1.034-.275.809.809 0 0 0 .724 0l.261-.13a1 1 0 0 1 .775-.05l.984.34c.078.028.16.044.243.054.784.093.855.377.694.801-.155.41-.616.617-1.035.487l-.01-.003C8.274 4.663 7.748 4.5 6 4.5 4.8 4.5 3.5 5.62 3.5 7c0 1.96.826 2.166 1.696 2.382.46.115.935.233 1.304.618.449.467.393 1.181.339 1.877C6.755 12.96 6.674 14 8.5 14c1.75 0 3-3.5 3-4.5 0-.262.208-.468.444-.7.396-.392.87-.86.556-1.8-.097-.291-.396-.568-.641-.756-.174-.133-.207-.396-.052-.551a.333.333 0 0 1 .42-.042l1.085.724c.11.072.255.058.348-.035.15-.15.415-.083.489.117.16.43.445 1.05.849 1.357L15 8A7 7 0 1 1 3.668 2.501Z"/>
+                        </svg></h2>
+                        <div>
+                          <a href="Projects/JavaScript/13_ API_Country/index.html">
+                            <img src="img/paysDuMonde.PNG" alt=""class="imgPays" >
+                          </a>
+                        </div>
+                        <span>Cette application va vous aider en géographie ... Quel est le pays le moins peuplé du monde ? Quelle est sa capitale ? 	&#129300;</span>
+                </div>
+            </div>
+            <div class="projectJS" >
+                
+                <div class="projectJSDetail">
+                  <h2>Générateur de mot de passe
+                    <svg xmlns="http://www.w3.org/2000/svg" style="margin-bottom: -8px;margin-left:5px;"width="30" height="30" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                      <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z"/>
+                      <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                    </svg>
+                  </h2>
+                  
+                  <div>
+                    <a href="Projects/JavaScript/7_GenerateurDePasse/Projet - PasswordGenerator/index.html">
+                      <img src="img/mdpGenerator.PNG" alt=""class="imgGMDP" >
+                    </a>
+                  </div>
+                  <span>Sécurisez vos compte avec des mots de passe indécryptables ! Cette application peut le faire pour vous en un rien de temps &#128521;</span>
+                </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    
+  </section>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
