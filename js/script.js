@@ -39,3 +39,28 @@ function showHamburger(){
     document.querySelector(".toggle-btn span:nth-child(2)").style.display = "block";
     document.querySelector(".toggle-btn span:nth-child(3)").style.transform = "none";
 }
+
+
+
+
+// hide   and show div
+function displayProjects(n) {
+    
+    var projectsList;
+    
+    if(n===1){
+        projectsList = projet1;
+    }
+    else if(n===2){
+        projectsList = projet2;
+    }
+    if (projectsList.style.display === "none") {
+        projectsList.style.display = "block";
+        document.querySelector(".svpPlus_show_"+n).style.display = "none";
+        document.querySelector(".svpPlus_hide_"+n).style.display = "block";
+    } else {
+        projectsList.style.display = "none";
+        document.querySelector(".svpPlus_show_"+n).style.display = "block";
+        document.querySelector(".svpPlus_hide_"+n).style.display = "none";
+    }
+  }
