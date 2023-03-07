@@ -572,6 +572,9 @@ border: 2px solid #9251ac;
   border-radius:5px;
   position: absolute;
   background-color: #e24117;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 @keyframes Animate-HTML {  from {  width: 10px;}to {  width: 85%}}
 @-webkit-keyframes Animate-HTML {  from {  width: 10px;}to {  width: 85%}}
@@ -588,6 +591,9 @@ border: 2px solid #9251ac;
   position: absolute;
   background-color: #006eba;
   border-radius:5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 @keyframes Animate-CSS {  from {  width: 10px;}to {  width: 70%}}
 @-webkit-keyframes Animate-CSS {  from {  width: 10px;}to {  width: 70%}}
@@ -606,6 +612,9 @@ border: 2px solid #9251ac;
   position: absolute;
   background-color: #e7c628;
   border-radius:5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 @keyframes Animate-JS {  from {  width: 10px;}to {  width: 65%}}
 @-webkit-keyframes Animate-JS {  from {  width: 10px;}to {  width: 65%}}
@@ -623,6 +632,9 @@ border: 2px solid #9251ac;
   position: absolute;
   background-color: #e61f24;
   border-radius:5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 @keyframes Animate-JAVA {  from {  width: 10px;}to {  width: 25%}}
 @-webkit-keyframes Animate-JAVA {  from {  width: 10px;}to {  width: 25%}}
@@ -639,6 +651,9 @@ border: 2px solid #9251ac;
   position: absolute;
   background-color: #7377ad;
   border-radius:5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 @keyframes Animate-PHP {  from {  width: 10px;}to {  width: 40%}}
 @-webkit-keyframes Animate-PHP {  from {  width: 10px;}to {  width: 40%}}
@@ -655,6 +670,9 @@ border: 2px solid #9251ac;
   position: absolute;
   background-color: #d47131;
   border-radius:5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 @keyframes Animate-SQL {  from {  width: 10px;}to {  width: 50%}}
 @-webkit-keyframes Animate-SQL {  from {  width: 10px;}to {  width: 50%}}
@@ -667,16 +685,20 @@ border: 2px solid #9251ac;
   -webkit-animation: Animate-ARDUINO 4s;
   -moz-animation: Animate-ARDUINO 4s;
   -o-animation: Animate-ARDUINO 4s;
-  width: 70%;
-  height: 50px;
-  position: absolute;
+  width: 75%;
   background-color: #009298;
+
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50px;
   border-radius:5px;
 }
-@keyframes Animate-ARDUINO {  from {  width: 10px;}to {  width: 70%}}
-@-webkit-keyframes Animate-ARDUINO {  from {  width: 10px;}to {  width: 70%}}
-@-moz-keyframes Animate-ARDUINO {  from {  width: 10px;}to {  width: 70%}}
-@-o-keyframes Animate-ARDUINO {  from {  width: 10px;}to {  width: 70%}}
+@keyframes Animate-ARDUINO {  from {  width: 10px;}to {  width: 75%}}
+@-webkit-keyframes Animate-ARDUINO {  from {  width: 10px;}to {  width: 75%}}
+@-moz-keyframes Animate-ARDUINO {  from {  width: 10px;}to {  width: 75%}}
+@-o-keyframes Animate-ARDUINO {  from {  width: 10px;}to {  width: 75%}}
 
 #Skill-WL {
   animation: Animate-WL 4s;
@@ -688,6 +710,9 @@ border: 2px solid #9251ac;
   position: absolute;
   background-color: #4b4b4b;
   border-radius:5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 @keyframes Animate-WL {  from {  width: 10px;}to {  width: 60%}}
 @-webkit-keyframes Animate-WL {  from {  width: 10px;}to {  width: 60%}}
@@ -704,6 +729,9 @@ border: 2px solid #9251ac;
   position: absolute;
   background-color: #000000;
   border-radius:5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 @keyframes Animate-LATEX {  from {  width: 10px;}to {  width: 60%}}
 @-webkit-keyframes Animate-LATEX {  from {  width: 10px;}to {  width: 60%}}
@@ -722,6 +750,9 @@ border: 2px solid #9251ac;
   position: absolute;
   background-color: #eb4d43;
   border-radius:5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 @keyframes Animate-LARAVEL {  from {  width: 10px;}to {  width: 45%}}
 @-webkit-keyframes Animate-LARAVEL {  from {  width: 10px;}to { width: 45%}}
@@ -738,27 +769,16 @@ border: 2px solid #9251ac;
   position: absolute;
   background-color: #000000;
   border-radius:5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 @keyframes Animate-SYMFONY {  from {  width: 10px;}to {  width: 55%}}
 @-webkit-keyframes Animate-SYMFONY {  from {  width: 10px;}to { width: 55%;}}
 @-moz-keyframes Animate-SYMFONY {  from {  width: 10px;}to {  width: 55%}}
 @-o-keyframes Animate-SYMFONY {  from {  width: 10px;}to {  width: 55%}}
 
-/* #Skill-WINDEV {
-  animation: Animate-C 4s;
-  -webkit-animation: Animate-C 4s;
-  -moz-animation: Animate-C 4s;
-  -o-animation: Animate-C 4s;
-  width: 70%;
-  height: 50px;
-  position: absolute;
-  background-color: #970cc1;
-  border-radius:5px;
-}
-@keyframes Animate-WINDEV {  from {  width: 10px;}to {  width: 70%}}
-@-webkit-keyframes Animate-WINDEV {from {  width: 10px;}to {  width: 70%}}
-@-moz-keyframes Animate-WINDEV {  from {  width: 10px;}to {  width: 70%}}
-@-o-keyframes Animate-WINDEV {  from {width: 10px;}to {  width: 70%}} */
+
 
 #Skill-WINDEV {
   animation: Animate-WINDEV 4s;
@@ -770,6 +790,9 @@ border: 2px solid #9251ac;
   position: absolute;
   background-color: #f2bd00;
   border-radius:5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 @keyframes Animate-WINDEV {  from {  width: 10px;}to {  width: 75%}}
 @-webkit-keyframes Animate-WINDEV {from {  width: 10px;}to {  width: 75%}}
@@ -786,6 +809,9 @@ border: 2px solid #9251ac;
   position: absolute;
   background-color: #5171b2;
   border-radius:5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 @keyframes Animate-WEBDEV {  from {  width: 10px;}to {  width: 70%}}
 @-webkit-keyframes Animate-WEBDEV {from {  width: 10px;}to {  width: 70%}}
@@ -803,6 +829,9 @@ border: 2px solid #9251ac;
   position: absolute;
   background-color: #f8a51e;
   border-radius:5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 @keyframes Animate-MS {  from {  width: 10px;}to {  width: 80%}}
 @-webkit-keyframes Animate-MS {  from {  width: 10px;}to {  width: 80%}}
@@ -819,6 +848,9 @@ border: 2px solid #9251ac;
   position: absolute;
   background-color: #940c76;
   border-radius:5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 @keyframes Animate-PEDAGOGIE {  from {  width: 10px;}to {  width: 90%}}
 @-webkit-keyframes Animate-PEDAGOGIE {  from {  width: 10px;}to {  width: 90%}}
@@ -835,6 +867,9 @@ border: 2px solid #9251ac;
   position: absolute;
   background-color: #0c5294;
   border-radius:5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 @keyframes Animate-CA {  from {  width: 10px;}to {  width: 95%}}
 @-webkit-keyframes Animate-CA {  from {  width: 10px;}to {  width: 95%}}
