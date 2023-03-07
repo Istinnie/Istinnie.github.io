@@ -809,6 +809,39 @@ border: 2px solid #9251ac;
 @-moz-keyframes Animate-MS {  from {  width: 10px;}to {  width: 80%}}
 @-o-keyframes Animate-MS {  from {  width: 10px;}to {  width: 80%}}
 
+#Skill-PEDAGOGIE {
+  animation: Animate-PEDAGOGIE 4s;
+  -webkit-animation: Animate-PEDAGOGIE 4s;
+  -moz-animation: Animate-PEDAGOGIE 4s;
+  -o-animation: Animate-PEDAGOGIE 4s;
+  width: 90%;
+  height: 50px;
+  position: absolute;
+  background-color: #940c76;
+  border-radius:5px;
+}
+@keyframes Animate-PEDAGOGIE {  from {  width: 10px;}to {  width: 90%}}
+@-webkit-keyframes Animate-PEDAGOGIE {  from {  width: 10px;}to {  width: 90%}}
+@-moz-keyframes Animate-PEDAGOGIE {  from {  width: 10px;}to {  width: 90%}}
+@-o-keyframes Animate-PEDAGOGIE {  from {  width: 10px;}to {  width: 90%}}
+
+#Skill-CA {
+  animation: Animate-CA 4s;
+  -webkit-animation: Animate-CA 4s;
+  -moz-animation: Animate-CA 4s;
+  -o-animation: Animate-CA 4s;
+  width: 95%;
+  height: 50px;
+  position: absolute;
+  background-color: #0c5294;
+  border-radius:5px;
+}
+@keyframes Animate-CA {  from {  width: 10px;}to {  width: 95%}}
+@-webkit-keyframes Animate-CA {  from {  width: 10px;}to {  width: 95%}}
+@-moz-keyframes Animate-CA {  from {  width: 10px;}to {  width: 95%}}
+@-o-keyframes Animate-CA {  from {  width: 10px;}to {  width: 95%}}
+
+
 .Skill-Area {
   z-index: 1;
   float: left;
