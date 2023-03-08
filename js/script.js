@@ -64,8 +64,8 @@ var TxtRotate = function(el, toRotate, period) {
 let mySideBar = document.getElementById("side-bar");
 let nClick = 0;
 
-document.querySelector(".toggle-btn").addEventListener("click",()=>{
-    
+btn.addEventListener("click",()=>{
+  console.log(nClick)
     if(nClick === 0 ){
         mySideBar.style.left = "0px";
         nClick ++;
