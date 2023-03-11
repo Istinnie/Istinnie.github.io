@@ -65,7 +65,7 @@ let mySideBar = document.getElementById("side-bar");
 let nClick = 0;
 
 btn.addEventListener("click",()=>{
-  console.log(nClick)
+  // console.log(nClick)
     if(nClick === 0 ){
         mySideBar.style.left = "0px";
         nClick ++;
@@ -79,6 +79,9 @@ btn.addEventListener("click",()=>{
     }
     
 });
+
+
+
 
 // Ranger la sidebar si on clique sur le contenu principal
 document.querySelector(".content").addEventListener("click",()=>{

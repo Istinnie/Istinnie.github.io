@@ -7,11 +7,12 @@
     <title>Compétences</title>
     
   <link rel="stylesheet" href="css/style.css">
-  
+  <link rel="shortcut icon" sizes="48x48" href="img/LogoINV.png" />
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
   
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script><!--Navigation bar link jquery-->
-  
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script> <!-- go to top of the page -->
+ 
 </head>
 <body>
       <!-- NavBar-->
@@ -26,7 +27,55 @@
         <div>
             <h1>Mes compétences</h1>
         </div>
+        <div class="SkillFolder" style="width: 50%;">
+          <div class="skillTitle">
+            Compétences humaines
+          </div>
+          <div id="SkillBox">
+              
+              <div class="SkillBar">
+                <div id="Skill-HTML" style="background-color: #058a57;">
+                  <span class="Skill-Area " >Autonomie</span>
+                  <span class="PercentText ">85%</span>
+                </div>
+              </div>
+              <div class="SkillBar">
+                <div id="Skill-CA">
+                  <span class="Skill-Area" >Capacité d'adaptation</span>
+                  <span class="PercentText ">95%</span>
+                </div>
+              </div>
+              <div class="SkillBar">
+                <div id="Skill-MS" style="background-color: #5a6b0f;">
+                  <span class="Skill-Area ">Ecoute active</span>
+                  <span class="PercentText ">80%</span>
+                </div>
+              </div>
+              <div class="SkillBar">
+                <div id="Skill-PEDAGOGIE">
+                  <span class="Skill-Area " >Pédagogie</span>
+                  <span class="PercentText ">90%</span>
+                </div>
+              </div>
+              <div class="SkillBar">
+                <div id="Skill-WINDEV" style="background-color: #181517;">
+                  <span class="Skill-Area" >Travail en équipe</span>
+                  <span class="PercentText ">75%</span>
+                </div>
+              </div>
+              
+              
 
+              <div class="SkillBar">
+                <div id="Skill-HTML" style="background-color: #429432;">
+                  <span class="Skill-Area ">Patience</span>
+                  <span class="PercentText ">85%</span>
+                </div>
+              </div>
+              
+            
+          </div> 
+        </div>
 
 
         <div class="SkillFolder" style="width: 50%;">
@@ -56,7 +105,7 @@
                 
                 <div id="Skill-JAVA">
                   <span class="Skill-Area ">JAVA</span>
-                  <span class="PercentText ">25%</span>
+                  <span class="PercentText ">35%</span>
                 </div>
               </div>
               <div class="SkillBar">
@@ -86,7 +135,7 @@
               <div class="SkillBar">
                 <div id="Skill-WL">
                   <span class="Skill-Area ">WLangage</span>
-                  <span class="PercentText ">60%</span>
+                  <span class="PercentText ">65%</span>
                 </div>
               </div>
           </div>
@@ -234,56 +283,16 @@
           </div> 
         </div>
         
+    <!-- TOP -->
+    <div id="return-placeholder">
+    </div>
+    <script>
+        $(function(){
+          $("#return-placeholder").load("returnButton.html");
+        });
+    </script>
+    <!--  -->  
 
-        <div class="SkillFolder" style="width: 50%;">
-          <div class="skillTitle">
-            Compétences humaines
-          </div>
-          <div id="SkillBox">
-              
-              <div class="SkillBar">
-                <div id="Skill-HTML" style="background-color: #058a57;">
-                  <span class="Skill-Area " >Autonomie</span>
-                  <span class="PercentText ">85%</span>
-                </div>
-              </div>
-              <div class="SkillBar">
-                <div id="Skill-CA">
-                  <span class="Skill-Area" >Capacité d'adaptation</span>
-                  <span class="PercentText ">95%</span>
-                </div>
-              </div>
-              <div class="SkillBar">
-                <div id="Skill-MS" style="background-color: #5a6b0f;">
-                  <span class="Skill-Area ">Ecoute active</span>
-                  <span class="PercentText ">80%</span>
-                </div>
-              </div>
-              <div class="SkillBar">
-                <div id="Skill-PEDAGOGIE">
-                  <span class="Skill-Area " >Pédagogie</span>
-                  <span class="PercentText ">90%</span>
-                </div>
-              </div>
-              <div class="SkillBar">
-                <div id="Skill-WINDEV" style="background-color: #181517;">
-                  <span class="Skill-Area" >Travail en équipe</span>
-                  <span class="PercentText ">75%</span>
-                </div>
-              </div>
-              
-              
-
-              <div class="SkillBar">
-                <div id="Skill-HTML" style="background-color: #429432;">
-                  <span class="Skill-Area ">Patience</span>
-                  <span class="PercentText ">85%</span>
-                </div>
-              </div>
-              
-            
-          </div> 
-        </div>
     </section>
 
   <script src="js/script.js"></script>

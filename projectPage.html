@@ -8,8 +8,11 @@
   <title>Mes projets</title>
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" sizes="48x48" href="img/LogoINV.png" />
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script><!--Navigation bar link jquery-->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script> <!-- go to top of the page -->
+ 
 </head>
 
 <body>
@@ -223,7 +226,7 @@
                             <img src="img/paysDuMonde.PNG" alt=""class="imgPays" >
                           </a>
                         </div>
-                        <span>Cette application va vous aider en géographie ... Quel est le pays le moins peuplé du monde ? Quelle est sa capitale ? 	&#129300;</span>
+                        <span>Quel est le pays le plus peuplé du monde ? Quelle est sa capitale ? ...	&#129300;</span>
                 </div>
             </div>
             <div class="projectJS" >
@@ -241,7 +244,7 @@
                       <img src="img/mdpGenerator.PNG" alt=""class="imgGMDP" >
                     </a>
                   </div>
-                  <span>Sécurisez vos compte avec des mots de passe indécryptables ! Cette application peut le faire pour vous en un rien de temps &#128521;</span>
+                  <span>Sécurisez vos compte avec des mots de passe indécryptables en un rien de temps &#128521;</span>
                 </div>
             </div>
           </div>
@@ -249,7 +252,17 @@
 
       </div>
     </div>
+  
 
+    <!-- TOP -->
+    <div id="return-placeholder">
+    </div>
+    <script>
+        $(function(){
+          $("#return-placeholder").load("returnButton.html");
+        });
+    </script>
+    <!--  --> 
     
   </section>
   <script src="js/script.js"></script>

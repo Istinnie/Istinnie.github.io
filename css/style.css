@@ -32,7 +32,7 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   font-size: 2rem;
-  margin-top: 20px;
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 h2 {
@@ -104,8 +104,34 @@ a{
   color: #ffffff;
   margin: 0px;
 }
-span{
-  /* color: #690283; */
+
+
+
+#scrollUp{
+  position: fixed;
+  bottom : 10px;
+  right: -350px;
+  opacity: 0.5;
+  width: auto;
+  height: auto;
+  padding: 3px;
+  margin-bottom: -10px;
+  border-radius: 10px;
+
+  /* background-color: #573d55; */
+  -webkit-transition: all 1s ease; /* Safari et Chrome */
+  -moz-transition: all 1s ease; /* Firefox */
+  -ms-transition: all 1s ease; /* Internet Explorer 9 */
+  -o-transition: all 1s ease; /* Opera */
+  transition: all 1s ease;
+}
+#scrollUp:hover{
+
+  -webkit-transform:scale(1.18); /* Safari et Chrome */
+  -moz-transform:scale(1.18); /* Firefox */
+  -ms-transform:scale(1.18); /* Internet Explorer 9 */
+  -o-transform:scale(1.18); /* Opera */
+  transform:scale(1.18);
 }
 
 /* ----------------Texte animé----------------------- */
@@ -125,6 +151,7 @@ span{
   text-align: right;
   
   margin-top: 40px;
+
   
 }
 
@@ -411,18 +438,18 @@ padding: 10px;
 /* color: #87bbfe; */
 }
 .timeline__event__icon {
-border-radius: 8px 0 0 8px;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-basis: 20%;
-font-size: 2rem;
-/* color: #9251ac; */
-padding: 20px;
-/* background: #555ac0; */
-/* color: #555ac0; */
-background: #754d809a;
-/* color: #5f1c74; */
+  border-radius: 8px 0 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 20%;
+  font-size: 2rem;
+  /* color: #9251ac; */
+  padding: 20px;
+  /* background: #555ac0; */
+  /* color: #555ac0; */
+  background: #754d809a;
+  /* color: #5f1c74; */
 
 }
 .timeline__event__icon i {
@@ -438,7 +465,7 @@ background: #754d809a;
 .timeline__event:after {
 content: "";
 width: 2px;
-height: 100%;
+height: 110%;
 background: #9251ac;
 position: absolute;
 top: 52%;
@@ -630,7 +657,7 @@ border: 2px solid #9251ac;
   -webkit-animation: Animate-JAVA 2s;
   -moz-animation: Animate-JAVA 2s;
   -o-animation: Animate-JAVA 2s;
-  width: 25%;
+  width: 35%;
   height: 50px;
   position: absolute;
   background-color: #e61f24;
@@ -639,10 +666,10 @@ border: 2px solid #9251ac;
   flex-direction: row;
   justify-content: space-between;
 }
-@keyframes Animate-JAVA {  from {  width: 10px;}to {  width: 25%}}
-@-webkit-keyframes Animate-JAVA {  from {  width: 10px;}to {  width: 25%}}
-@-moz-keyframes Animate-JAVA {  from {  width: 10px;}to {  width: 25%}}
-@-o-keyframes Animate-JAVA {  from {  width: 10px;}to {  width: 25%}}
+@keyframes Animate-JAVA {  from {  width: 10px;}to {  width: 35%}}
+@-webkit-keyframes Animate-JAVA {  from {  width: 10px;}to {  width: 35%}}
+@-moz-keyframes Animate-JAVA {  from {  width: 10px;}to {  width: 35%}}
+@-o-keyframes Animate-JAVA {  from {  width: 10px;}to {  width: 35%}}
 
 #Skill-PHP {
   animation: Animate-PHP 4s;
@@ -708,7 +735,7 @@ border: 2px solid #9251ac;
   -webkit-animation: Animate-WL 4s;
   -moz-animation: Animate-WL 4s;
   -o-animation: Animate-WL 4s;
-  width: 60%;
+  width: 65%;
   height: 50px;
   position: absolute;
   background-color: #4b4b4b;
@@ -717,10 +744,10 @@ border: 2px solid #9251ac;
   flex-direction: row;
   justify-content: space-between;
 }
-@keyframes Animate-WL {  from {  width: 10px;}to {  width: 60%}}
-@-webkit-keyframes Animate-WL {  from {  width: 10px;}to {  width: 60%}}
-@-moz-keyframes Animate-WL {  from {  width: 10px;}to {  width: 60%}}
-@-o-keyframes Animate-WL {  from {  width: 10px;}to {  width: 60%}}
+@keyframes Animate-WL {  from {  width: 10px;}to {  width: 65%}}
+@-webkit-keyframes Animate-WL {  from {  width: 10px;}to {  width: 65%}}
+@-moz-keyframes Animate-WL {  from {  width: 10px;}to {  width: 65%}}
+@-o-keyframes Animate-WL {  from {  width: 10px;}to {  width: 65%}}
 
 #Skill-LATEX{
   animation: Animate-LATEX 4s;
@@ -946,4 +973,14 @@ border: 2px solid #9251ac;
   background-color: #573d55;
   padding: 15px;
   letter-spacing: 1px;
+}
+
+
+/* -------------------CONTACT PAGE ----------------- */
+
+.image-logo{
+  width : 300px; height : 300px;
+  display: block;
+  margin: auto;
+  
 }
