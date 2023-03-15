@@ -86,7 +86,7 @@ btn.addEventListener("click",()=>{
 // Ranger la sidebar si on clique sur le contenu principal
 document.querySelector(".content").addEventListener("click",()=>{
     
-    mySideBar.style.left = "-230px";
+    mySideBar.style.left = "-260px";
     nClick =0;
     showHamburger();
             
