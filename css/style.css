@@ -44,12 +44,12 @@ p {
 }
 #side-bar {
   position: absolute;
-  width: 230px;
-  height: 110%;
+  width: 260px;
+  height: 105%;
   /* background: #70556e; */
   background: #ffffff;
   top: -20px;
-  left: -230px;
+  left: -260px;
   transition: 0.5s ease-out;
   z-index: 4;
   border-radius: 5px;
@@ -60,7 +60,7 @@ p {
 .toggle-btn {
   position: absolute;
   top: 30px;
-  left: 240px;
+  left: 275px;
   cursor: pointer;
   height: 50px;
   width: 50px;
@@ -86,15 +86,28 @@ li {
   cursor: pointer;
   padding: 15px;
   text-align: left;
-letter-spacing: 1px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  /* background-color: #573d55; */
+  -webkit-transition: all 1s ease; /* Safari et Chrome */
+  -moz-transition: all 1s ease; /* Firefox */
+  -ms-transition: all 1s ease; /* Internet Explorer 9 */
+  -o-transition: all 1s ease; /* Opera */
+  transition: all 1s ease;
+  display: flex;
+  flex-direction: row;
 }
 li:hover {
     /* font-size: 19px; */
     border-radius: 5px;
-    background: #130202b7;
-    color: #ffffff;
+    background: #c9c9c954;
+    color: #474747;
     
-    
+    -webkit-transform:scale(1.05); /* Safari et Chrome */
+    -moz-transform:scale(1.05); /* Firefox */
+    -ms-transform:scale(1.05); /* Internet Explorer 9 */
+    -o-transform:scale(1.05); /* Opera */
+    transform:scale(1.05);
 
 }
 
@@ -173,20 +186,22 @@ a{
     margin-top: 20px;
     
   }
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 5px;
-    right: 0;
-    height: 180px;
-    width: 180px;
-    opacity: 0;
-    transition: 2s ease;
-    background-color: #ffffffce;
-    border-radius: 50%;
-    font-weight: bold;
-  }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 20px;
+      right: 0;
+      height: 180px;
+      width: 180px;
+      opacity: 0;
+      transition: 2s ease;
+      background-color: #ffffffe7;
+      border-radius: 50%;
+      font-weight: bold;
+    }
+  
 
   .photoId:hover .overlay {
     opacity: 1;
@@ -385,6 +400,8 @@ transition: all 1s ease;
   flex-direction: column;
   width: 60vw;
   margin: -10px auto;
+  justify-content: space-around;
+
 }
 .timeline__event {
     background: #fff;
@@ -393,6 +410,7 @@ transition: all 1s ease;
     display: flex;
     margin: 20px 0;
     border-radius: 8px;
+   
     box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
       0 18px 36px -18px rgba(0, 0, 0, 0.3),
       0 -12px 36px -8px rgba(0, 0, 0, 0.025);

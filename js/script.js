@@ -73,7 +73,7 @@ btn.addEventListener("click",()=>{
 
     }else{
         // ranger la sidebar si on reclique dessus
-        mySideBar.style.left = "-230px";
+        mySideBar.style.left = "-260px";
         nClick =0;
         showHamburger();
     }
