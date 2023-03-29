@@ -117,6 +117,8 @@ function displayProjects(n) {
     }
     else if(n===2){
         projectsList = projet2;
+    }else if(n==3){
+      projectsList = projet3;
     }
     if (projectsList.style.display === "none") {
         projectsList.style.display = "block";
