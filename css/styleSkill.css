@@ -700,7 +700,9 @@ a{
    
     display: block;
     margin: 80px 0 0px 0;
-    width: 250px;
+    width: 220px;
+    height: 250px;
+    border-radius: 50%;
     -webkit-transition: all 1s ease; /* Safari et Chrome */
     -moz-transition: all 1s ease; /* Firefox */
     -ms-transition: all 1s ease; /* Internet Explorer 9 */
