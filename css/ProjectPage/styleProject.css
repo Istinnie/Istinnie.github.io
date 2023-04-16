@@ -155,14 +155,20 @@ transition: all 1s ease;
 
 .titleProject{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap; 
     justify-content: start;
     background-color: #70556e1c;
+    text-align: left;
     
     /* background: #754d809a; */
     width: 100%;
     cursor: pointer;
+}
+.folder-description{
+  margin: -10px 30px 30px 80px;
+  font-weight: 500;
+  
 }
 .svpPlus_show_1, .svpPlus_hide_1, .svpPlus_show_2, .svpPlus_hide_2{
   margin-left: 0px;
