@@ -1,0 +1,174 @@
+
+/* ------------------ PROJECT PAGE -------------------- */
+
+  /* BLOC DE PROJECT JAVSCRIPT */
+  .projectRow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    margin: 30px;
+    
+    
+}
+  .projectJS{
+    
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    justify-content: space-around;
+     
+    vertical-align: middle;
+    margin-bottom: 30px; 
+    width:38vw;
+
+}
+
+.projectJSDetail{
+  
+    /* overflow: auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
+    width:380px;
+    margin: 10px;
+    text-align: center;
+    vertical-align: middle;
+
+}
+.imgBulle,.imgPays{
+    border-radius: 10px;
+    width: 340px;
+    height: 300px;
+    margin-bottom: 20px;
+    /* border: 1px solid #aaaaaa34 ; */
+    /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
+  -webkit-transition: all 1s ease; /* Safari et Chrome */
+  -moz-transition: all 1s ease; /* Firefox */
+  -ms-transition: all 1s ease; /* Internet Explorer 9 */
+  -o-transition: all 1s ease; /* Opera */
+  transition: all 1s ease;
+}
+
+.imgTemp{
+    border-radius: 10px;
+    width: 230px;
+    height: 300px;
+    margin-bottom: 20px;
+    /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
+  -webkit-transition: all 1s ease; /* Safari et Chrome */
+  -moz-transition: all 1s ease; /* Firefox */
+  -ms-transition: all 1s ease; /* Internet Explorer 9 */
+  -o-transition: all 1s ease; /* Opera */
+  transition: all 1s ease;
+}
+.imgGMDP{
+  border-radius: 10px;
+  width: 400px;
+  height: 250px;
+  margin-bottom: 20px;
+  margin-left: -20px;
+  /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
+-webkit-transition: all 1s ease; /* Safari et Chrome */
+-moz-transition: all 1s ease; /* Firefox */
+-ms-transition: all 1s ease; /* Internet Explorer 9 */
+-o-transition: all 1s ease; /* Opera */
+transition: all 1s ease;
+}
+.imgBulle:hover,.imgPays:hover,.imgTemp:hover,.imgGMDP:hover{
+    /* L'image est grossie de 25% */
+    
+  -webkit-transform:scale(1.05); /* Safari et Chrome */
+  -moz-transform:scale(1.05); /* Firefox */
+  -ms-transform:scale(1.05); /* Internet Explorer 9 */
+  -o-transform:scale(1.05); /* Opera */
+  transform:scale(1.05);
+}
+/* .imgBulle:hover,.imgPays:hover{
+  border-radius: 20px;
+  width: 360px;
+  height: 330px;
+
+} 
+.imgTemp:hover{
+  border-radius: 20px;
+  width: 250px;
+    height: 330px;
+} */
+/* .imgGMDP:hover{
+  border-radius: 10px;
+  /* margin-left: -10px;   /
+} */
+
+
+
+/* // ------- PROJET DISPLAY ----------------------- */
+
+.folder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 100px;
+  margin-left: 100px;
+  background: #ffffff;
+
+  border-radius: 10px;
+  border: 0.1px solid #f1f1f1cb;
+  box-shadow: 1px 20px 25px -5px rgba(68, 2, 68, 0.1),
+    1px 10px 10px -5px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 30px;
+  -webkit-transition: all 1s ease; /* Safari et Chrome */
+  -moz-transition: all 1s ease; /* Firefox */
+  -ms-transition: all 1s ease; /* Internet Explorer 9 */
+  -o-transition: all 1s ease; /* Opera */
+  transition: all 1s ease;
+}
+
+.folder:hover{
+  -webkit-transform:scale(1.02); /* Safari et Chrome */
+  -moz-transform:scale(1.02); /* Firefox */
+  -ms-transform:scale(1.02); /* Internet Explorer 9 */
+  -o-transform:scale(1.02); /* Opera */
+  transform:scale(1.02);
+}
+
+/* // ------- FOLDER SUMMARY */
+
+.folder-summary {
+  padding: 30px;
+  display: flex;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1;
+  height: 90px;
+  color: #040005c7;
+  text-shadow: 0 0 0.05em #ab45c28a;
+  /* vertical-align: middle; */
+  
+  /* position: relative; */
+}
+
+.titleProject{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: start;
+    background-color: #70556e1c;
+    
+    /* background: #754d809a; */
+    width: 100%;
+    cursor: pointer;
+}
+.svpPlus_show_1, .svpPlus_hide_1, .svpPlus_show_2, .svpPlus_hide_2{
+  margin-left: 0px;
+  margin-right: 20px;
+  margin-top: -5px;
+  fill: #530053;
+}
+
+
