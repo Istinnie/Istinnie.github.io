@@ -135,12 +135,15 @@
     -o-animation: Animate-SQL 4s;
     width: 50%;
     height: 50px;
+    padding-left: 0px;
     position: absolute;
     background-color: #d47131;
     border-radius:5px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    text-align: left;
+    
   }
   @keyframes Animate-SQL {  from {  width: 10px;}to {  width: 50%}}
   @-webkit-keyframes Animate-SQL {  from {  width: 10px;}to {  width: 50%}}
@@ -390,7 +393,7 @@
     -o-transition: all 1s ease; /* Opera */
     transition: all 1s ease;
     
-    width: 60%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -497,4 +500,29 @@
   -ms-transform:scale(1.1); /* Internet Explorer 9 */
   -o-transform:scale(1.1); /* Opera */
   transform:scale(1.1);
+}
+ 
+@media only screen and (max-width: 768px) {
+  h1{
+    margin-top: 80px;
+    margin-bottom: 45px;
+    font-size: 22px;
+  }
+  .SkillFolder{
+    width: 90%;
+  }  
+  #SkillBox {
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+  .Skill-Area, .PercentText{
+    font-size: 15px;
+    align-items: center;
+    padding-bottom: 200px;
+  }
+  #Skill-SQL{
+    padding-left: -20px;
+  }
+
 }

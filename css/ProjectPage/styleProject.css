@@ -176,5 +176,80 @@ transition: all 1s ease;
   margin-top: -5px;
   fill: #530053;
 }
+.gnmdp{
+  margin-left: -20px;
+}
+.hms{
+  margin-left: -10px;
+}
 
+@media only screen and (max-width: 786px) {
+
+  h1{
+    margin-top: 80px;
+    
+    margin-bottom: 60px;
+    font-size: 22px;
+    width: 92%;
+   
+  }
+  h2{
+    text-align: left;
+    width: 70%;
+    margin-left: 100px;
+    
+  }
+  .folder{
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+  }
+  .folder-description{
+    margin: 30px ;
+    margin-top: -5px;
+    font-size: 18px;
+  }
+  .folder-summary{
+    height: auto;
+  }
+  .projectJSDetail{
+    width:380px;
+    transform:scale(0.95);
+  }
+  .projectJSDetail span{
+    width:330px;
+    margin-left: 85px;
+    text-align: left;
+    margin-top: 0px;
+  }
+  .imgGMDP, .imgTemp, .imgBulle, .imgGMDP{
+    transform:scale(0.85);
+    margin-right: -170px;
+    margin-bottom: -20px;
+    margin-top: -25px;
+  }
+  .imgGMDP{
+    transform:scale(0.83);
+    margin-left: -33px;
+    margin-bottom: 10px;
+  }
+  .imgTemp{
+    margin-right: -120px;
+    margin-bottom: 0px;
+  }
+  .imgBulle{
+    margin-right: -130px;
+    margin-bottom: 5px;
+  }
+  .imgPays{
+    transform:scale(0.83);
+    margin-right: -160px;
+    margin-top: -20px;
+    margin-bottom: -15px;
+  }
+  
+  h2, .hms,.gnmdp{
+    margin-left: 85px;
+  }
+}
 
