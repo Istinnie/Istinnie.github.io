@@ -154,9 +154,6 @@ a{
     flex-direction: column;
     align-items:end;
     justify-content: right;
-    /* min-height: 50vh; 
-    max-width: 60vw;
-    margin: auto; */
     font-family: 'Raleway', sans-serif;
     font-size: 1.5em; 
     color: #888;
@@ -215,3 +212,34 @@ a{
       transform: translate(-50%, -50%);
       text-align: center;
     }
+
+@media only screen and (max-width: 768px) {
+  #side-bar {
+    height: 95%;
+    top: -20px;
+    box-shadow: 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+
+}
+  .toggle-btn {
+    top: 25px;
+    left: 270px;
+    height: 30px;
+    width: 30px;
+  }
+  .toggle-btn span {
+    width: 45px;
+    height: 10px;
+  }
+  ul{
+    padding: 25px;
+    margin-top: 15px;
+}
+li {
+
+  padding: 10px;
+  text-align: left;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+
+}
+}

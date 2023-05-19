@@ -3,12 +3,23 @@
     jQuery(function(){
         $(function () {
             $(window).scroll(function () {
-                if ($(this).scrollTop() > 250 ) { 
-                    $('#scrollUp').css('right','20px');
-                    $('#scrollUp').css('bottom','20px');
-                } else { 
-                    $('#scrollUp').removeAttr( 'style' );
+                if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+                // true for mobile device
+                if ($(this).scrollTop() > 150 ) { 
+                        $('#scrollUp').css('right','20px');
+                        $('#scrollUp').css('bottom','20px');
+                    } else { 
+                        $('#scrollUp').removeAttr( 'style' );
+                    }
+                }else{
+                    if ($(this).scrollTop() > 250 ) { 
+                        $('#scrollUp').css('right','20px');
+                        $('#scrollUp').css('bottom','20px');
+                    } else { 
+                        $('#scrollUp').removeAttr( 'style' );
+                    }
                 }
+                
 
             });
         });

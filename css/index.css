@@ -1,0 +1,115 @@
+
+body{
+    
+    margin: 0;
+    display: grid;
+    /* background-color: aqua; */
+    grid-template-columns:  1fr 0.6fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    /* gap: 10px; */
+    height: 100vh;
+    grid-template-areas: 
+            "vio vio ja"
+            "ro ve ve"
+            "ro ve ve";
+    margin-top: -50px;
+    overflow:auto;
+}
+
+.ja{
+
+    background-color: #b7b7b7;
+    grid-area: ja;
+    
+    
+}
+.vio{
+    background-color: #ffffff;
+    grid-area: vio;
+    
+    
+}
+.ve{
+    background-color: #70556e48;
+    grid-area: ve;
+    z-index: 2;
+    margin-left: -60px;
+    margin-bottom: -20px;
+    border-radius: 10px 0px 0px 10px;
+    }
+.ro{
+    background-color: #130202b7;
+    grid-area: ro;
+    
+}
+.indexTitle{
+    z-index: 3;
+    font-family: cursive;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 10%;
+    width: 50vw;
+    height: 60vh;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    text-align: right;
+    margin-left: 60px;
+    background-color: #130202b7;
+    margin-top: -25%;
+    border-radius: 10px;
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+    0 18px 36px -18px rgba(0, 0, 0, 0.3),
+    0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+    -webkit-transition: all 1s ease; /* Safari et Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* Internet Explorer 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+}
+.indexTitle1{
+    font-size: 40px;
+    margin-bottom: 20px;
+
+
+}
+.indexTitle:hover{
+  width: 52vw;
+    height: 62vh;
+    -webkit-transform:scale(1); /* Safari et Chrome */
+  -moz-transform:scale(1); /* Firefox */
+  -ms-transform:scale(1); /* Internet Explorer 9 */
+  -o-transform:scale(1); /* Opera */
+  transform:scale(1);
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    body{
+        height: 70vh;
+        grid-template-areas: 
+                "vio ja ja"
+                "ro ve ve"
+                "ro ve ve";
+        margin-top: 0px;
+        overflow: auto;
+    }
+
+    .ve{
+        margin-bottom: -60px;
+        }
+   
+    .indexTitle{
+        width: 72vw;
+        height: 50vh;
+        letter-spacing: 3px;
+        margin-left: 18px;
+        margin-top: -10%;
+        padding: 5%;
+        padding-top: 10%;
+    }
+    .indexTitle1{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+  }
