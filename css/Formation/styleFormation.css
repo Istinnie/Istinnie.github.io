@@ -354,11 +354,11 @@ color: #555ac0;
 .contact-link{
   position: absolute;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: -25px;
-  bottom: 0px;
+  margin-bottom: 0px;
+  bottom: 40px;
   right: 10px;
   z-index: 4;
   transition: all 1s ease-out;
